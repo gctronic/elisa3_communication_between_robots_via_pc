@@ -1,1 +1,5 @@
-# elisa3_communication_between_robots_via_pc
+# Elisa-3 communication between robots via pc
+This examples shows how to emulate direct communication between robots: basically a common state is shared between the robots and this state is changed based on the current state of each robot; it emulates the facts that each robot propagates its state to all other robots. Actually all the robots communicate only with the computer (only one computer with only one radio module) and the computer forward the information to all the others robots; the radio is fast enough so that the computer in the middle will not slow down the communication. A big advantage passing from the computer is that you can log the communication messages on the computer and see what is happening.
+In particular in this demo a total of 4 robots are handled and when a robot crosses a black line, then it inform all others robots to change their color. <br/>
+The project depends on the [Elisa-3 remote library](http://www.gctronic.com/doc/index.php/Elisa-3#Elisa-3_library).<br/>
+For more information refer to the wiki [Elisa-3 Communication between robots via PC](https://www.gctronic.com/doc/index.php?title=Elisa-3#Communication_between_robots_via_PC).
